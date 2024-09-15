@@ -1,0 +1,321 @@
+@import url(./fonts.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+header {
+  background: #322E41;
+  height: 65px;
+}
+@media (max-width: 991px) {
+  header {
+    height: 430px;
+  }
+}
+header .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  header .header__nav {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 991px) {
+  header .header__nav ul {
+    flex-direction: column;
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+}
+header .header__nav ul li a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  transition: 0.2s linear;
+}
+header .header__nav ul li a:hover {
+  color: #D47300;
+  transition: 0.2s linear;
+}
+
+main {
+  margin-bottom: 50px;
+}
+main .main__content {
+  background-image: url(../img/Nike-Bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main__content h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 58px;
+  color: #FFFFFF;
+  text-align: center;
+}
+main .main__content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-align: center;
+}
+main .main__content span {
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+main .nike {
+  background: white;
+}
+main .nike .nike__company {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 1130px) {
+  main .nike .nike__company {
+    flex-direction: column;
+  }
+}
+main .nike .nike__company .nike__content {
+  width: 540px;
+  height: 463px;
+  border-radius: 6px;
+  background: #EBEBEB;
+  margin-top: -50px;
+}
+@media (max-width: 560px) {
+  main .nike .nike__company .nike__content {
+    width: 400px;
+  }
+}
+@media (max-width: 420px) {
+  main .nike .nike__company .nike__content {
+    width: 300px;
+  }
+}
+main .nike .nike__company .nike__content .nike__infinity {
+  position: relative;
+  left: 10px;
+  padding-top: 20px;
+}
+@media (max-width: 560px) {
+  main .nike .nike__company .nike__content .nike__infinity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center !important;
+    position: relative;
+    left: -10px;
+  }
+}
+@media (max-width: 560px) {
+  main .nike .nike__company .nike__content .nike__infinity img {
+    width: 300px;
+  }
+}
+@media (max-width: 420px) {
+  main .nike .nike__company .nike__content .nike__infinity img {
+    width: 200px;
+  }
+}
+main .nike .nike__company .nike__content .nike__infinity h2 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  color: #2C2A2A;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+@media (max-width: 420px) {
+  main .nike .nike__company .nike__content .nike__infinity h2 {
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+main .nike .nike__company .nike__content .nike__infinity p {
+  width: 510px;
+  height: 118px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #9B9B9B;
+}
+@media (max-width: 560px) {
+  main .nike .nike__company .nike__content .nike__infinity p {
+    width: 300px;
+  }
+}
+@media (max-width: 420px) {
+  main .nike .nike__company .nike__content .nike__infinity p {
+    width: 250px;
+  }
+}
+main .nike .nike__company .nike__block {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  place-items: center;
+  gap: 30px;
+  margin-top: -50px;
+}
+@media (max-width: 1130px) {
+  main .nike .nike__company .nike__block {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 560px) {
+  main .nike .nike__company .nike__block {
+    grid-template-columns: repeat(1, 4fr);
+  }
+}
+main .nike .nike__company .nike__block .nike__info {
+  width: 255px;
+  height: 218px;
+  border-radius: 6px;
+  background: #EBEBEB;
+}
+main .nike .nike__company .nike__block .nike__info img {
+  position: relative;
+  left: 70px;
+  top: 10px;
+}
+main .nike .nike__company .nike__block .nike__info h2 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 6px;
+  color: #2C2A2A;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+main .nike .nike__company .nike__block .nike__info p {
+  width: 224px;
+  height: 64px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #9B9B9B;
+  position: relative;
+  left: 10px;
+  margin-top: 50px;
+}
+
+footer {
+  background: #322E41;
+  height: 260px;
+}
+@media (max-width: 991px) {
+  footer {
+    height: 500px;
+  }
+}
+footer .footer__content {
+  padding-top: 40px;
+}
+footer .footer__content form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  footer .footer__content form {
+    flex-direction: column;
+  }
+}
+footer .footer__content form .footer__info input {
+  width: 350px;
+  height: 34px;
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: none;
+}
+@media (max-width: 365px) {
+  footer .footer__content form .footer__info input {
+    width: 200px;
+  }
+}
+footer .footer__content form .footer__info .textarea {
+  height: 86px;
+  margin-top: 10px;
+}
+footer .footer__content form .footer__info button {
+  width: 350px;
+  height: 25px;
+  border: none;
+  border-radius: 6px;
+  background: #544294;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+@media (max-width: 365px) {
+  footer .footer__content form .footer__info button {
+    width: 200px;
+  }
+}
+footer .footer__content form .footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  footer .footer__content form .footer__nav {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 991px) {
+  footer .footer__content form .footer__nav .footer__list {
+    flex-direction: column;
+    text-align: center !important;
+  }
+}
+footer .footer__content form .footer__nav ul li a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  transition: 0.2s linear;
+}
+footer .footer__content form .footer__nav ul li a:hover {
+  color: #D47300;
+  transition: 0.2s linear;
+}/*# sourceMappingURL=style.css.map */
